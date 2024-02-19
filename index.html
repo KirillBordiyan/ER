@@ -3,100 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>resume HTML</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="me.png" width="300" alt="с картинкой обосрались, конечно">
-            </td>
-            <td>
+    <div class="full_body">
+        <div class="info">
+            <img src="me.png" alt="мое фото" class="photo">
+            
+            <div class="infotext">
                 <h1>Бордиян Кирилл</h1>
                 <p>23.04.2001</p>
                 <p>Java-backend разработчик</p>
                 <p>Пример моих начинаний на <a href="https://github.com/KirillBordiyan?tab=repositories" target="_blank">GitHub </a></p>
-            </td>
-        </tr>
-    </table>
+                <h4>Соцсети, которыми пользуюсь</h4>
+                    <a href="https://t.me/bordiyank">Telegram</a> | 
+                    <a href="https://www.linkedin.com/in/kirill-bordiyan-168274262/">LinkedIn</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Образование:</h2>
+            <ul class="list">
+                <h3>Основное:</h3>
+                <h4>Брестский Государственный Технический Университет (BSTU).</h4>
+                <li>Высшее, экономический факультет, специальность логистика.</li>
+                <li>2018-2022 гг.</li>
+                <h3>Дополнительное:</h3>
+                <li>Курсы польского языка: октябрь 2021 – февраль 2022, ОЦ "Нью-тон".</li>
+                <li>Обучение онлайн: март 2023 - наст.время, платформа GeekBrains.</li>
+            </ul>
+        </div>
 
-    <hr>
-    
-    <h2>Образование:</h2>
-    
-    <ul>
-        <h3>Основное:</h3>
-        Брестский Государственный Технический Университет (BSTU).
-        <li>Высшее, экономический факультет, специальность логистика.</li>
-        <li>2018-2022 гг.</li>
-        <h3>Дополнительное:</h3>
-        <li>Курсы польского языка: октябрь 2021 – февраль 2022, ОЦ "Нью-тон".</li>
-        <li>Обучение онлайн: март 2023 - наст.время, платформа GeekBrains.</li>
-    </ul>
+        <div class="card">
+             <h2>Профессиональные навыки в сфере разработки:</h2>
+            <ul class="list">
+                <h3>Java 11/17, Maven, ООП</h3>
+                <li>Написание простых консольных приложений на Java с соблюдением SOILID.</li>
+                <li>Cборка проекта с помощью Maven, определение и настойка зависимостей.</li>
+                <li>Соблюдение принципов ООП.</li>
 
-    <hr>
+                <h3>JDBC/JPA, SQL</h3>
+                <li>В некоторых проектах (Telegram бот, сайт для заказа еды) использовалось сохранение данных пользователя/заказчика.</li>
+                <li>В дальнейшей практике (сайт для заказа еды) планируется расширение БД.</li>
+                <li>Диалект MySQL: изучался по курсам на Stepik и самостоятельно.</li>
+                <li>Ознакомлен с PostgreSQL.</li>
 
-    <h2>Профессиональные навыки в сфере разработки:</h2>
-    <ul>
-        <h3>Java 11/17, Maven, ООП</h3>
-        <li>Написание простых консольных приложений на Java с соблюдением SOILID.</li>
-        <li>Cборка проекта с помощью Maven, определение и настойка зависимостей.</li>
-        <li>Соблюдение принципов ООП.</li>
+                <h3>OS Linux, Docker (Docker Compose, DockerFile).</h3>
+                <li>На основе GNU/Linux изучался Docker, составление DockerFile и настройка Docker Compose для работы нескольких контейнеров.</li>
+                <li>В целом был ознакомлен с темой контейнеризации, управления памяти процессов, правами доступа и управления пакетами.</li>   
+                <li>В контейнерах также настраивал и разворачивал Nginx, Apache2.0, php-fpm.</li>
+            </ul>
+        </div>
 
-        <h3>JDBC/JPA, SQL</h3>
-        <li>В некоторых проектах (Telegram бот, сайт для заказа еды) использовалось сохранение данных пользователя/заказчика.</li>
-        <li>В дальнейшей практике (сайт для заказа еды) планируется расширение БД.</li>
-        <li>Диалект MySQL: изучался по курсам на Stepik и самостоятельно.</li>
-        <li>Ознакомлен с PostgreSQL.</li>
+        <div class="card">
+            <h2>Источники получения знаний и навыков:</h2>
+            <ul class="source_list">
+                <li>Крейг Уоллс "Spring in action" (6-е изд, перевод "ДМК Пресс").</li>
+                <li>Статьи JavaRush.</li>
+                <li>Сайт metanit.com (Java, SQL).</li>
+                <li>Сайт hackerrank.com</li>
+                <li>Сайт leetcode.com</li>
+                <li>Дополнительно изучаю HTML/CSS.</li>
+                <p>Ранее пробовал себя в языках Python(знакомился с Django в т.ч.), JS (Node.js). <br>
+                    Выполнял алгоритмические задачи, знакомился с взаимодействием классов, изучал ООП.</p>
+            </ul>
+        </div>    
 
-        <h3>OS Linux, Docker (Docker Compose, DockerFile).</h3>
-        <li>На основе GNU/Linux изучался Docker, составление DockerFile и настройка Docker Compose для работы нескольких контейнеров.</li>
-        <li>В целом был ознакомлен с темой контейнеризации, управления памяти процессов, правами доступа и управления пакетами.</li>   
-        <li>В контейнерах также настраивал и разворачивал Nginx, Apache2.0, php-fpm.</li>
-    </ul>
+        <div class="card">
+            <h2>Опыт работы:</h2>
+            <table class="table">
+                <tbody> 
+                    <tr>
+                        <td>СООО "Брествнештранс" </td>
+                        <td>Транспортный экспедитор</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>ООО "ЕвроКруиз" </td>
+                        <td>Инженер по организации перевозок</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>       
+            </table>
+        </div>   
+        
+        
+        <div class="contact">
+            <h2>Связаться со мной:</h2>
 
-    <hr>
+            <form action="/">
+                <div class="row">
+                    <div class="form">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
 
-    <h2>Источники получения знаний и навыков:</h2>
-    <ul>
-        <li>Крейг Уоллс "Spring in action" (6-е изд, перевод "ДМК Пресс").</li>
-        <li>Статьи JavaRush.</li>
-        <li>Сайт metanit.com (Java, SQL).</li>
-        <li>Сайт hackerrank.com</li>
-        <li>Сайт leetcode.com</li>
-        <li>Дополнительно изучаю HTML/CSS.</li>
-        <p>Ранее пробовал себя в языках Python(знакомился с Django в т.ч.), JS (Node.js). <br>
-            Выполнял алгоритмические задачки, знакомился с взаимодействие классов, изучал ООП.</p>
-    </ul>
+                    <div class="form">
+                        <label for="email">Ваш email:</label>
+                        <input type="text" id="email" placeholder="Введите ваш email">
+                    </div>
+                </div>
 
-    <hr>
+                <div class="form">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" cols="15" rows="2"></textarea>
+                </div>
 
-    <h2>Опыт работы:</h2>
-    <table>
-        <thead> 
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-            </tr>
-        </thead>
-        <tbody> 
-            <tr>
-                <td>СООО "Брествнештранс" </td>
-                <td>Транспортный экспедитор</td>
-            </tr>
-            <tr>
-                <td>ООО "ЕвроКруиз" </td>
-                <td>Инженер по организации перевозок</td>
-            </tr>
-        </tbody>       
-    </table>
-
-    <hr>
-
-    <h2>Соцсети, которыми пользуюсь:</h2>
-    <ul>
-        <li><a href="https://t.me/bordiyank">Telegram</a></li>
-        <li><a href="https://www.linkedin.com/in/kirill-bordiyan-168274262/">LinkedIn</a></li>
-    </ul>
+                <input class="btn" type="submit" value="Отправить!">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
 
